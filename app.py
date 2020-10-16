@@ -101,6 +101,6 @@ for i in range(1,epochs+1):
     optimizer.step()
 
     if i%print_after == 0:
-        plt.imshow(imgcnvt(target,label="Epoch"+str(i)))
+        plt.imshow(imgcnvt(target),label="Epoch"+str(i))
         plt.show()
         plt.imsave(str(i)+'.png',imgcnvt(target),format='png')
